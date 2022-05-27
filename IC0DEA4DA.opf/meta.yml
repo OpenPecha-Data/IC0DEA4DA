@@ -1,0 +1,32 @@
+id: IC0DEA4DA
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T20:04:14.392040'
+last_modified: '2022-05-27T20:04:14.392053'
+parser: null
+source_metadata:
+  title: 'Vasubandhu: Triṃśikāvijñapti'
+  language: bo
+  base:
+    f4C3A:
+      title: CI_Verses 1-10
+      base_file: f4C3A.txt
+      order: 1
+    f4BF7:
+      title: CI_Verses 11-20
+      base_file: f4BF7.txt
+      order: 2
+    f00E4:
+      title: CI_Verses 21-31
+      base_file: f00E4.txt
+      order: 3
+  chapter_to_tile:
+    CI: Title
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

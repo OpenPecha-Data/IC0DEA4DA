@@ -1,0 +1,394 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=268' accesskey='1'>Vasubandhu: Triṃśikāvijñapti</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Vasubandhu: Triṃśikāvijñapti<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2474]" value="2474" id="lancheckbox" checked >Sanskrit: Vasubandhu san</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2477]" value="2477" id="lancheckbox" checked >Chinese: 眞諦 Paramārtha 499-569, T 1587, chi</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2478]" value="2478" id="lancheckbox" checked >Chinese: 玄奘 648, T 1586, chi</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2475]" value="2475" id="lancheckbox" checked >Tibetan: Jinamitra & Śīlendrabodhi, fl. ca. 800, tib</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2479]" value="2479" id="lancheckbox" checked >English: eng</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="268">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="268">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='268'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v268">Search in Vasubandhu: Triṃśikāvijñapti</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=268'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=268'>Vasubandhu: Triṃśikāvijñapti</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=268" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="40828.Title|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('40828.Title','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_40828.Title" border=0 hspace=2><a id="href_40828.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493299&level=1&cid=345515" class="ajax_tree0">Title
+</td></tr></table>
+<div style="display:none;"  id="div_40828.Title">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_40829.Verses1-10" border=0 hspace=2><a id="href_40829.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493301&level=2&cid=345517" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_40830.Verses11-20" border=0 hspace=2><a id="href_40830.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493311&level=2&cid=345527" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_40831.Verses21-31" border=0 hspace=2><a id="href_40831.Verses21-31" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493321&level=2&cid=345537" class="ajax_tree1">Verses 21-31
+</td></tr></table>
+</div>
+<script language=javascript>test('40831.Verses21-31|40828.Title|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=268&amp;mid=493321&amp;level=2">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=268&amp;cid=345537&amp;mid=493321&amp;level=2">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=268&amp;cid=345537&amp;mid=493321&amp;level=2">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><div class='kilderef' id='2815337'></div><div class='clear'></div><span id='2815337bi' class='paragraph'>
+							paratantrasvabhāvas tu vikalpaḥ pratyayodbhavaḥ |<br>niṣpannas tasya pūrveṇa sadā rahitatā tu yā || 21 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='2815436'></div><div class='clear'></div><span id='2815436bi' class='paragraph'>
+							此分別者因 (20) 他故起。立名依他性。此前後兩性未曾相離。 (21) 即是3實實性。若相離者唯識義不成。有境識 (22) 異故。由不相離故唯識無境界。無境界故識 (23) 亦成無。由境無識無故立唯識義。是乃成立。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='2815469'></div><div class='clear'></div><span id='2815469bi' class='paragraph'>
+							依他起自性　分別縁所生(17)圓成實於彼　常遠離前性&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><div class='kilderef' id='2815370'></div><div class='clear'></div><span id='2815370bi' class='paragraph'>
+							/ gźan gyi dbaṅ gi ṅo bo ñid // rnam rtog yin te rkyen las byuṅ /<br>/ grub ni de la sṅa ma po // rtag tu med par gyur pa gaṅ /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><div class='kilderef' id='2815502'></div><div class='clear'></div><span id='2815502bi' class='paragraph'>
+							From the interdependent self-nature Comes discrimination arising from conditions;<br />The perfection of the fruit comes from Always being apart from the former nature.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815338bi' class='paragraph'>
+							ata eva sa naivānyo nānanyaḥ paratantrataḥ |<br>anityatādivad vācyo nādṛṣṭe ’smin sa dṛśyate || 22 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815437bi' class='paragraph'>
+							是故前性於後性不一不異。若定一異則有過 (25) 失何耶。分別與依他定一者。分別性決定永 (26) 無不爲五法藏所攝。依他性亦應永無。若爾 (27) 便無生死解脱善惡律戒法。此爲不可。既不 (28) 如此故。分別性與依他性不得定一。若定異 (29) 者。則分別性便不能遣依他性。既由觀分別 (1) 性是無所有。方見依他性亦無所有故。不得 (2) 定異。又若分別性定異依他性者。分別性體 (3) 應定是有。非謂永無。有可異無。何所論異。是 (4) 故但説不一不異。不可定説一異也。如無常 (5) 與有爲法。亦不得定説一異。前無後無是無 (6) 常義。五陰是有爲法。若無常與有爲法定一 (7) 者。無常是無。一切諸法並皆是無。既不並無 (8) 故不得定一。若定異者。4觀無常時。不應通 (9) 有爲法。以其通故不得定異。此亦是不一不 (10) 異也。如是一切諸法皆爾。如色等與瓶亦不 (11) 一不異。若色與瓶定一。5香等不成瓶。瓶則 (12) 眞實。若色定異瓶。見色不應通瓶。是故不定 (13) 一異也。兩説亦爾。若不見分別性。則不見依 (14) 他性。是故不一不異。然一切諸法但有三性。 (15) 攝法皆盡。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815470bi' class='paragraph'>
+							故此與依他　非異非不異<br>(19)如無常等性　非不見此彼&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815371bi' class='paragraph'>
+							/ de phyir de ñid gźan dbaṅ las // gźan min gźan ma yin pa'aṅ min /<br>/ mi rtag pa sogs bźin du brjod // de ma mthoṅ bar de mi mthoṅ /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815503bi' class='paragraph'>
+							Therefore in relation to the interdependent, It is neither different nor is it not different,<br />Just like the nature of impermanence, etc., And when one is not perceived, the other is.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815339bi' class='paragraph'>
+							trividhasya svabhāvasya trividhāṃ niḥsvabhāvatām |<br>sandhāya sarvadharmāṇāṃ deśitā niḥsvabhāvatā || 23 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815438bi' class='paragraph'>
+							如來爲衆生説諸法無性。亦有三 (16) 種。三性如前説。前二是俗諦。後一是眞諦眞 (17) 俗二諦攝一切法皆盡。三無性者。即不離前 (18) 三性。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815471bi' class='paragraph'>
+							若有三性。如何世尊説一切法皆無自性。頌(21)曰<br>(22)即依此三性　立彼三無性<br>(23)故佛密意説　一切法無性&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815372bi' class='paragraph'>
+							/ ṅo bo ñid ni rnam gsum gyis // ṅo bo ñid med rnam gsum la /<br>/ dgoṅs nas chos rnams thams cad kyi // ṅo bo ñid med bstan pa yin /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815504bi' class='paragraph'>
+							On the basis of the three kinds of self-nature Is established the threefold absence of self-nature;<br />Thus the Buddha spoke with the hidden intent That all dharmas are without nature.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815340bi' class='paragraph'>
+							prathamo lakṣaṇenaiva niḥsvabhāvo ’paraḥ punaḥ |<br>na svayambhāva etasyety aparā niḥsvabhāvatā || 24 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815439bi' class='paragraph'>
+							分別性名無相性。無體相故。依他性名 (19) 無生性。體及因果無所有。體似塵相。塵即分 (20) 別性。分別既無體亦是無也。因亦無者。本由 (21) 分別性爲境。能發生識果。境界既無云何生 (22) 果。如種子能生芽。種子既無芽從何出。是故 (23) 無生也。眞實性名無性性。無有性無無性。約 (24) 人法故無有性。約二空故無無性。即是非有 (25) 性非無性故。重稱無性性也。此三無性。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815472bi' class='paragraph'>
+							初即相無性　次無自然性<br>(25)後由遠離前　所執我法性&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815373bi' class='paragraph'>
+							/ daṅ po pa ni mtshan ñid kyi // ṅo bo ñid med gźan pa yaṅ /<br>/ de ni raṅ ñid mi 'byuṅ bas // ṅo bo ñid med gźan yin no /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815505bi' class='paragraph'>
+							The first is the naturelessness of characteristics, The next is the naturelessness of self-existence;<br />The last is the detachment from the first, When the natures of self and dharmas are grasped.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815341bi' class='paragraph'>
+							dharmāṇāṃ paramārthaś ca sa yatas tathatāpi saḥ |<br>sarvakālaṃ tathābhāvāt saiva vijñaptimātratā || 25 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815440bi' class='paragraph'>
+							是一 (26) 切法眞實。以其離有故名常。欲顯此三無性 (27) 故。明唯識義也。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815473bi' class='paragraph'>
+							此諸法勝義　亦即是眞如<br>(27)常如其性故　即唯識實性&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815374bi' class='paragraph'>
+							/ chos kyi don gyi dam pa'aṅ de // 'di ltar de bźin ñid kyaṅ de /<br>/ dus rnams kun na'aṅ de bźin ñid // de ñid rnam par rig pa tsam /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815506bi' class='paragraph'>
+							This is the ultimate truth of all dharmas, And it is also the same as True Suchness.<br />Because its nature is eternally so, It is the true nature of Consciousness Only.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815342bi' class='paragraph'>
+							yāvad vijñaptimātratve vijñānaṃ nāvatiṣṭhati |<br>grāhadvayasyānuśayastāvan na vinivartate || 26 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815441bi' class='paragraph'>
+							若人修道智慧未住此唯識 (28) 義者。二執隨眠所生衆惑不得滅離。根本不 (29) 滅故。由此義故立一乘皆令學菩薩道。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815474bi' class='paragraph'>
+							後五行頌明唯識行位者。論曰。如是所成唯(29)識性相。誰依幾位如何悟入。謂具大乘二種(1)種性。一本性種性。謂無始來依附本識法爾。(2)所得無漏法因。二謂習所成種性。謂聞法界(3)等流法已。聞所成等熏習所成。具此二性(4)方能悟入。何謂五位。一資糧位。謂修大乘順(5)解脱分。依識性相能深信解。其相云何。頌曰<br>(6)乃至未起識　求住唯識性<br>(7)於二取隨眠　猶未能伏滅&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815375bi' class='paragraph'>
+							/ ji srid rnam rig tsam ñid la // rnam par śes pa mi gnas pa /<br>/ 'dzin pa gñis kyi bag la ñal // de ñid rnam par mi ldog go /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815507bi' class='paragraph'>
+							So long as one has not given rise to the consciousness Which seeks to abide in the nature of Consciousness Only,<br />Then regarding the two types of grasping dispositions, He is still not yet able to subdue and extinguish them.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815343bi' class='paragraph'>
+							vijñaptimātram evedam ity api hay upalambhataḥ |<br>sthāpayann agrataḥ kiñcit tanmātre nāvatiṣṭhate || 27 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815442bi' class='paragraph'>
+							若謂 (1) 但唯有識現前起此執者。若未離此執。不得 (2) 入唯識中。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815475bi' class='paragraph'>
+							二加行位。謂修大乘順決擇分。在加行位能(9)漸伏除所取能取。其相云何<br>(10)現前立少物　謂是唯識性<br>(11)以有所得故　非實住唯識&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815376bi' class='paragraph'>
+							/ 'di dge rnam rig tsam ñid ces // de sñam du ni dmigs nas su /<br>/ ci yaṅ ruṅ ste mdun 'jog na // de ni tsam la mi gnas so /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815508bi' class='paragraph'>
+							Setting up and establishing even something small And saying this is the nature of Consciousness Only,<br />Because there is still something which is grasped, It is not truly abiding in Consciousness Only.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815344bi' class='paragraph'>
+							yadālambanaṃ vijñānaṃ naivopalabhate tadā |<br>sthitaṃ vijñānamātratve grāhyābhāve tadagrahāt || 28 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815443bi' class='paragraph'>
+							若智者不更縁此境二不顯現。是 (3) 時行者名入唯識。何以故。由修觀6熟亂執 (4) 盡。是名無所得&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815476bi' class='paragraph'>
+							三通達位。謂諸菩薩所住見道。在通達位如(13)實通達。其相云何<br>(14)若時於所縁　智都無所得<br>(15)爾時住唯識　離二取相故&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815377bi' class='paragraph'>
+							/ nam źig śes pas dmigs pa rnams // mi dmigs de yi tshe na ni /<br>/ rnam par rig pa tsam la gnas // gzuṅ ba med pas de 'dzin med /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815509bi' class='paragraph'>
+							When one regards that which is conditioned With the wisdom of total non-appropriation,<br />Then at that time one abides in Consciousness Only, Apart from the duality of grasping at appearances.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815345bi' class='paragraph'>
+							acitto ’nupalambho ’sau jñānaṃ lokottaraṃ ca tat |<br>āśrayasya parāvṛttir dvidhā dauṣṭhulyahānitaḥ || 29 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815444bi' class='paragraph'>
+							非心非境。是智名出世無分 (5) 別智。即是境智無差別。名如如智。亦名轉依。 (6) 捨生死依但依如理故。麁重及執二倶盡故。 (7) 麁重即分別性。執即依他性。二種倶盡也。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815477bi' class='paragraph'>
+							四修習位。謂諸菩薩所住修道。修習位中如(17)實見理數數修習。其相云何<br>(18)無得不思議　是出世間智<br>(19)捨二麁重故　便證得轉依&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815378bi' class='paragraph'>
+							/ de ni sems med mi dmigs pa // 'jig rten 'das pa'i ye śes med /<br>/ gnas kyaṅ gźan du gyur pa ste // gnas ṅan len gñis spaṅs pa'o /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815510bi' class='paragraph'>
+							Without grasping and not conceptualizing— This is the wisdom of the supramundane realm<br />Which abandons the coarseness of duality And naturally attains transformation of the basis.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815346bi' class='paragraph'>
+							sa evānasravo dhātur acintyaḥ kuśalo dhruvaḥ |<br>sukho vimuktikāyo ’sau dharmākhyo ’yaṃ mahāmuneḥ || 30 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815445bi' class='paragraph'>
+							是 (8) 名無流界。是名不可思惟。是名眞實善。是名 (9) 常住果。是名出世樂。是名解脱身。於三身中 (10) 即法身。釋曰。二執隨眠所生果。7或不得滅離 (11) 者。即是見思二執隨眠煩惱能作種子。生無 (12) 量上心。或皆以本識爲其根本。根本未滅支 (13) 未盡。如勝鬘經説。無明住地不斷不究竟。無 (14) 邊四住地不斷不究竟也。若智者不更縁此 (15) 境二不顯現故者。此境即此唯識境。唯識散 (16) 亂由無境故識無。此識既無。能縁唯識之心 (17) 亦無。故云二不顯現。此二但談二識所現前 (18) 境。前境先已無故。是名識轉品究竟也&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815478bi' class='paragraph'>
+							五究竟位。謂住無上正等菩提。出障圓明能(21)盡未來化有情類。其相云何<br>(22)此即無漏界　不思議善常<br>(23)安樂解脱身　大牟尼名法&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815379bi' class='paragraph'>
+							/ de ñid zag pa med daṅ dbyiṅs // bsam gyis mi khyab dge daṅ brtan /<br>/ de ni bde ba rnam grol sku // thub ba chen po'i chos źes bya /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815511bi' class='paragraph'>
+							This is itself the untainted realm, Inconceivable, good, and eternal,<br />Peaceful and blissful, the body of liberation, And what the great Muni called the Dharma.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815347bi' class='paragraph'>
+							triṃśikāvijñaptikārikāḥ samāptāḥ |<br>kṛtir iyam ācāryavasubandhoḥ |&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815337";
+							kilderef = "Triṃś Vasubandhu san  21 - Vasubandhu san 31";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815446bi' class='paragraph'>
+							轉識論&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815436";
+							kilderef = "Triṃś 眞諦 Paramārtha 499-569, T 1587, chi  63a19 - 眞諦 Paramārtha 499-569, T 1587, chi c19";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815479bi' class='paragraph'>
+							唯識三十論頌&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815469";
+							kilderef = "Triṃś 玄奘 648, T 1586, chi  61a16 - 玄奘 648, T 1586, chi b24";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815380bi' class='paragraph'>
+							/sum cu pa'i tshig le'ur byas pa slob dpon chen po dbyig gñen gyis mdzad pa rdzogs so //<br />// rgya gar gyi mkhan po dzi na mi tra daṅ śI len dra po d+hi daṅ / źu chen gyi lo tsA ba ban de ye śes sdes bsgyur źiṅ źus te gtan la phab pa'o // //&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815370";
+							kilderef = "Triṃś Jinamitra & Śīlendrabodhi, fl. ca. 800, tib  - Jinamitra & Śīlendrabodhi, fl. ca. 800, tib ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815512bi' class='paragraph'>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815502";
+							kilderef = "Triṃś eng  - eng ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=accc44e5-d16e-11e3-942f-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>

@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=268' accesskey='1'>Vasubandhu: Triṃśikāvijñapti</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Vasubandhu: Triṃśikāvijñapti<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2474]" value="2474" id="lancheckbox" checked >Sanskrit: Vasubandhu san</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2477]" value="2477" id="lancheckbox" checked >Chinese: 眞諦 Paramārtha 499-569, T 1587, chi</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2478]" value="2478" id="lancheckbox" checked >Chinese: 玄奘 648, T 1586, chi</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2475]" value="2475" id="lancheckbox" checked >Tibetan: Jinamitra & Śīlendrabodhi, fl. ca. 800, tib</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_268[2479]" value="2479" id="lancheckbox" checked >English: eng</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="268">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="268">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='268'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v268">Search in Vasubandhu: Triṃśikāvijñapti</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=268'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=268'>Vasubandhu: Triṃśikāvijñapti</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=268" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="40828.Title|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('40828.Title','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_40828.Title" border=0 hspace=2><a id="href_40828.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493299&level=1&cid=345515" class="ajax_tree0">Title
+</td></tr></table>
+<div style="display:none;"  id="div_40828.Title">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_40829.Verses1-10" border=0 hspace=2><a id="href_40829.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493301&level=2&cid=345517" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_40830.Verses11-20" border=0 hspace=2><a id="href_40830.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493311&level=2&cid=345527" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_40831.Verses21-31" border=0 hspace=2><a id="href_40831.Verses21-31" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=268&mid=493321&level=2&cid=345537" class="ajax_tree1">Verses 21-31
+</td></tr></table>
+</div>
+<script language=javascript>test('40829.Verses1-10|40828.Title|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=268&amp;mid=493301&amp;level=2">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=268&amp;cid=345517&amp;mid=493301&amp;level=2">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=268&amp;cid=345517&amp;mid=493301&amp;level=2">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><div class='kilderef' id='2815317'></div><div class='clear'></div><span id='2815317bi' class='paragraph'>
+							ātmadharmopacāro hi vividho yaḥ pravartate |<br>vijñānapariṇāme ’sau pariṇāmaḥ sa ca tridhā || 1 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='2815416'></div><div class='clear'></div><span id='2815416bi' class='paragraph'>
+							識轉有二種。一轉爲衆生。二轉爲法。一切 (7) 所縁不出此二。此二實無。但是識轉作二相 (8) 貌也。次明能縁有三種。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='2815449'></div><div class='clear'></div><span id='2815449bi' class='paragraph'>
+							由假説我法　有種種相轉<br>(28)彼依識所變　此能變唯三　　&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><div class='kilderef' id='2815350'></div><div class='clear'></div><span id='2815350bi' class='paragraph'>
+							/ bdag daṅ chos su ñer 'dogs pa // sna tshogs dag ni gaṅ byuṅ ba /<br>/ de ni rnam par śes par gyur // gyur pa de yaṅ rnam gsum ste /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><div class='kilderef' id='2815482'></div><div class='clear'></div><span id='2815482bi' class='paragraph'>
+							From the delusion of self and dharmas, Comes the conveyence of various manifestations;<br />These are supported and transformed by consciousness, And there are only three of these which may transform.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815318bi' class='paragraph'>
+							vipāko mananākhyaś ca vijñaptir viṣayasya ca |<br>tatrālayākhyaṃ vijñānaṃ vipākaḥ sarvabījakam || 2 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815417bi' class='paragraph'>
+							一果報識。即是阿梨 (9) 耶識。二執識。即阿陀那識。三塵識。即是六識。 (10) 果報識者爲煩惱業所引故名果報。亦名本 (11) 識。一切有爲法種子所依止。亦名宅識。一切 (12) 種子之所栖處。亦名藏識。一切種子隱伏之 (13) 處。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815450bi' class='paragraph'>
+							謂異熟思量　及了別境識<br>(1)次二十二行半廣辯唯識相者。由前頌文略(2)標三能變。今廣明三變相。且初能變其相云(3)何。頌曰(4)初阿頼耶識　異熟一切種　　　　&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815351bi' class='paragraph'>
+							/ rnam par smin daṅ ṅar sems daṅ // yul la rnam par rig pa'o /<br>/ de la kun gźi rnam śes ni // rnam smin sa bon thams cad pa /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815483bi' class='paragraph'>
+							These are retribution, thought, And the perception of external objects.<br />The first of these is the Ālaya Consciousness, Which is retribution as well as all the seeds.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815319bi' class='paragraph'>
+							asaṃviditakopādisthānavijñaptikaṃ ca tat |<br>sadā sparśamanaskāravitsañjñācetanānvitam || 3 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815418bi' class='paragraph'>
+							問此識何相何境。答相及境不可分別 (14) 一體無異。問若爾云何知有。答由事故知 (15) 有此識此識能生一切煩惱業果報事。譬如 (16) 無明。當起此無明。相境可分別不若可分別 (1) 非謂無明。若不可分別則應非有。而是有非 (2) 無亦由有欲瞋等事知有無明。本識亦爾相 (3) 境無差別。但由事故知其有也就此識中。具 (4) 有八種異。謂依止處等。具如九識義1品説。 (5) 又與五種心法相應。一觸。二作意。三受。四思 (6) 惟。五想。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815451bi' class='paragraph'>
+							不可知執受　處了常與觸<br>(6)作意受想思　相應唯捨受　　&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815352bi' class='paragraph'>
+							/ de ni len pa dag daṅ gnas // rnam par rig pa mi rig pa /<br>/ rtag tu reg daṅ yid byed daṅ // rig daṅ 'du śes sems par ldan /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815484bi' class='paragraph'>
+							Its grasping, location, and knowing are imperceivable, And it is always associated with mental contact,<br />Attention, sensation, conception, and thought; It is associated with neither pleasure nor pain.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815320bi' class='paragraph'>
+							upekṣā vedanā tatrānivṛtāvyākṛtaṃ ca tat |<br>tathā sparśādayas tac ca vartate srotasaughavat || 4 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815419bi' class='paragraph'>
+							以根塵識三事和合生觸。心恒動行 (7) 名爲作意。受但是捨受。思惟籌量可行不可 (8) 行。令心成邪成正。名爲思惟。作意如馬行。思 (9) 惟如騎者。馬但直行不能避就是非。由騎者 (10) 故令其離2非就是。思惟亦爾。能令作意離漫 (11) 行也。此識及心法。但是自性無記。念念恒流 (12) 如水流浪。本識如流五法如浪。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815452bi' class='paragraph'>
+							是無覆無記　觸等亦如是<br>(8)恒轉如瀑流&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815353bi' class='paragraph'>
+							/ de la tshor ba btaṅ sñoms te // de ni ma bsgribs luṅ ma bstan /<br>/ reg la sogs pa'aṅ de bźin no // de ni rgyun 'bab chu bo bźin /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815485bi' class='paragraph'>
+							It is undefiled and morally indeterminate; Mental contact and the others are also like this.<br />Its conveyence is like that of a flowing stream,&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815321bi' class='paragraph'>
+							tasya vyāvṛtir arhatve tadāśritya pravartate |<br>tadālambaṃ manonāma vijñānaṃ mananātmakam || 5 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815420bi' class='paragraph'>
+							乃至得羅漢 (13) 果。此流浪法亦猶未滅。是名第一識。依縁此 (14) 識有3第二執識。此識以執著爲體。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815453bi' class='paragraph'>
+							阿羅漢位捨<br>已説初能變。第二能變其相云何。頌曰<br>(10)次第二能變　是識名末那<br>(11)依彼轉縁彼　思量爲性相&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815354bi' class='paragraph'>
+							/ dgra bcom ñid na de ldog go // de la gnas te rab 'byuṅ źiṅ /<br>/ de la dmigs pa yid ces bya // rnam śes ṅar sems bdag ñid can /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815486bi' class='paragraph'>
+							And it is abandoned in the stage of the arhat.<br />Next is the second which is able to transform, And this consciousness is called Manas.<br />It is supported by the previous conveyence, And its character and nature are that of thought.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815322bi' class='paragraph'>
+							kleśaiś caturbhiḥ sahitaṃ nivṛtāvyākṛtaiḥ sadā |<br>ātmadṛṣṭyātmamohātmamānātmasnehasañjñitaiḥ || 6 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815421bi' class='paragraph'>
+							與四惑相 (15) 應。一無明。二我見。三我慢。四我愛。此識名 (16) 有覆無記。亦有五種心法相應名字同前。4而 (17) 前細此麁。此識及相應法。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815454bi' class='paragraph'>
+							四煩惱常倶　謂我癡我見<br />(13)并我慢我愛　及餘觸等倶<br />(14)有覆無記攝&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815355bi' class='paragraph'>
+							/ bsgribs la luṅ du ma bstan pa'i // ñon moṅs bźi daṅ rtag tu 'grogs /<br>/ bdag tu lta daṅ bdag tu rmoṅs // bdag rgyal bdag chags 'du śes pa /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815487bi' class='paragraph'>
+							It is always associated with the four vexations, Which are delusion of a self, perception of a self,<br />Identity with a self, and love of a self, As well as mental contact and the others.<br />It is defiled and morally indeterminate, &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815323bi' class='paragraph'>
+							yatrajas tanmayair anyaiḥ sparśādyaiś cārhato na tat |<br>na nirodhasamāpattau mārge lokottare na ca || 7 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815422bi' class='paragraph'>
+							至羅漢位究竟滅 (18) 盡。及入無心定亦皆滅盡。若見諦5害煩惱識 (19) 及心法。得出世道十六行。究竟滅盡。餘殘未 (20) 盡但屬思惟。是名第二識。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815455bi' class='paragraph'>
+							隨所生所繋<br>(15)阿羅漢滅定　出世道無有&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815356bi' class='paragraph'>
+							/ gaṅ du skyes pa de'i'o gźan // reg sogs kyaṅ de dgra bcom med /<br>/ 'gog pa'i sñoms par 'jug la med /  / 'jig rten 'das pa'i lam na'aṅ med /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815488bi' class='paragraph'>
+							And its location is bound to that of life.<br />In arhats, in the Nirodha Samāpatti, And in the Supramundane Path, it does not exist. &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815324bi' class='paragraph'>
+							dvitīyaḥ pariṇāmo ’yaṃ tṛtīyaḥ ṣaḍvidhasya yā |<br>viṣayasyopalabdhiḥ sā kuśalākuśalādvayā || 8 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815423bi' class='paragraph'>
+							第三塵識者。識轉 (21) 似塵。更成六種識轉似塵。已如前説。體通 (22) 三性。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815456bi' class='paragraph'>
+							如是已説第二能變。第三能變其相云何。頌(17)曰<br>(18)次第三能變　差別有六種<br>(19)了境爲性相　善不善倶非&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815357bi' class='paragraph'>
+							/ 'di ni gyur pa gñis pa'o // gsum pa yul rnam drug po la /<br>/ dmigs pa gaṅ yin de dag ste // dge daṅ mi dge gñi ga min /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815489bi' class='paragraph'>
+							Next is the third which is able to transform, Which is distinguished into six different divisions;<br />Its appearance and nature are perceiving external objects, And these may be good, bad, or indeterminate.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815325bi' class='paragraph'>
+							sarvatragair viniyataiḥ kuśalaiś caitasair asau |<br>samprayuktā tathā kleśair upakleśais trivedanā || 9 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815424bi' class='paragraph'>
+							與十種心法相應。及十善惡。并大小 (23) 7惑具三種受。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815457bi' class='paragraph'>
+							此心所遍行　別境善煩惱<br>(21)隨煩惱不定　皆三受相應&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815358bi' class='paragraph'>
+							/ kun tu 'gro daṅ bye brag des // sems las byuṅ ba dge ba daṅ /<br>/ de bźin ñon moṅs ñe ñon moṅs // tshor ba gsum daṅ de mtshuṅs ldan /&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815490bi' class='paragraph'>
+							It is associated with omnipresent mental activities, With the external objects, the good, the vexations,<br />The secondary vexations, and the undetermined, And it is associated with all three feelings.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='2815326bi' class='paragraph'>
+							ādyāḥ sparśādayaś chandādhimokṣasmṛtayaḥ saha |<br>samādhidhībhyāṃ niyatāḥ śraddhātha hrirapatrapā || 10 ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815317";
+							kilderef = "Triṃś Vasubandhu san  1 - Vasubandhu san 10";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815425bi' class='paragraph'>
+							十種心法者。觸等五種如前。 (24) 但此爲最麁也。後五者。一欲。二了。三念。四 (25) 定。五慧。此中言了者。即舊所明解脱數也。十 (26) 善者。一信。二羞。三慚。&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815416";
+							kilderef = "Triṃś 眞諦 Paramārtha 499-569, T 1587, chi  61c6 - 眞諦 Paramārtha 499-569, T 1587, chi 62a26";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='2815458bi' class='paragraph'>
+							初遍行觸等　次別境謂欲<br>(23)勝解念定慧　所縁事不同<br />(24)善謂信慚愧&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815449";
+							kilderef = "Triṃś 玄奘 648, T 1586, chi  60a27 - 玄奘 648, T 1586, chi b23";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='2815359bi' class='paragraph'>
+							/ daṅ po'i reg la sogs pa daṅ // 'dun mos dran daṅ bcas pa daṅ /<br>/ tiṅ ṅe 'dzin blo bye brag des // dad daṅ ṅo tsha khrel yod daṅ /&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815350";
+							kilderef = "Triṃś Jinamitra & Śīlendrabodhi, fl. ca. 800, tib  - Jinamitra & Śīlendrabodhi, fl. ca. 800, tib ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='English'><span id='2815491bi' class='paragraph'>
+							Omnipresent mental activities are mental contact, etc.; Next are those with objects, which are desires,<br />Determination, mindfulness, samādhi, wisdom, etc., And the object of each of these is not the same. The good are faith, conscience, a sense of shame,&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "2815482";
+							kilderef = "Triṃś eng  - eng ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=acbff179-d16e-11e3-942f-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
